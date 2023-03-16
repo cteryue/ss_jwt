@@ -18,7 +18,7 @@ public class AccountServiceImpl implements AccountService {
     public Account findByUsername(String username) {
         QueryWrapper wrapper = new QueryWrapper();
         wrapper.eq("username",username);
-        System.out.println(1);
+        System.out.println(2);
         return accountMapper.selectOne(wrapper);
     }
 }
